@@ -1,2 +1,3 @@
 const addTodo = (value) => ({type:'ADD_TODO', val: value})
-export default addTodo
+const clickTodo = (val) => ({type:'CLICK_TODO', val : val})
+export  { addTodo, clickTodo }

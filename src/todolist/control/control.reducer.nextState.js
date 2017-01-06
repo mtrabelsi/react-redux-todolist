@@ -7,13 +7,13 @@
 }
 
  const clickTodo = (state,  action) => {
-	return Object.assign({}, state.map( todo =>{
+	return  state.map( todo =>{
 		if ( todo.id === action.val ) {
-			return {id: todo.id, text : todo.text, completed: !todo.completed}
+			return Object.assign({}, {id: todo.id, text : todo.text, completed: !todo.completed})
 		} else {
-			return todo
+			return Object.assign({}, todo)
 		}
-	}))
+	})
 
 }
 

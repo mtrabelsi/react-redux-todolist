@@ -1,5 +1,5 @@
 
-import addTodo from './control.actionBuilder'
+import { addTodo, clickTodo } from './control.actionBuilder'
 import Control from './control'
 import { connect } from 'react-redux'
 
@@ -8,5 +8,6 @@ return	{
 		addTodo : value => dispatch(addTodo(value))
 	}
 }
+
 
 export default connect(undefined, mapDispatchToProps) (Control)
