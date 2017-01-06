@@ -1,0 +1,1 @@
+export default const clickTodo = (val) => ({type:'CLICK_TODO', val : val})
