@@ -12,7 +12,7 @@ class Control extends React.Component {
 	render () {
 		return (
 			<div>
-			<input type='text' onChange={this.handleCahnge}/> <button onClick={() => this.props.addTodo(this.textValue)} >+</button>
+			<input type='text' onChange={this.handleCahnge}/> <button onClick={() => this.props.addTodo(this.textValue) } >+</button>
 			</div>
 			)
 	}
